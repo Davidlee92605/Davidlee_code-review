@@ -29,7 +29,7 @@ public:
     friend int FindSetCollapsing(int *subset, int i);
     friend void UnionSet(int *subset, int x, int y);
 };
-void FindSetCollapsing(int *subset, int i){      // 用遞迴做collapsing
+int FindSetCollapsing(int *subset, int i){      // 用遞迴做collapsing //here should return int
 
     int root;  // root
     for (root = i; subset[root] >= 0; root = subset[root]);
